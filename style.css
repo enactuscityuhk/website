@@ -241,7 +241,7 @@ p {
 .ourteam {
   margin: 70px auto;
   color: #FFC222;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: 900;
   position: relative;
 }
@@ -317,14 +317,29 @@ p {
   transform: scale(1.1);
 }
 
-.event h3 {
-  display: block;
-  font-weight: bold;
-  padding-top: 15px;
-  vertical-align: left;
-  margin-bottom: 10px;
-  text-align: left;
+@media screen and (min-width: 601px) {
+  .event h3 {
+    display: block;
+    font-weight: bold;
+    padding-top: 15px;
+    vertical-align: left;
+    margin-bottom: 10px;
+    text-align: left;
+  }
 }
+
+@media screen and (max-width: 601px) {
+  .event h3 {
+    display: block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 15px;
+    vertical-align: left;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}
+
 
 .event h5 {
   color: #FFC222;
@@ -420,7 +435,6 @@ p {
 }
 }
 
-
 .es h4 {
   font-size: 1.3rem;
   font-weight: 300;
@@ -500,7 +514,7 @@ p {
 
 .aboutus h1 {
   color: #FFC222;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: 900;
 }
 
