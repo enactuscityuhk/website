@@ -447,10 +447,23 @@ p {
   color: #515356;
 }
 
+.es p {
+  margin: 1px;
+}
+
+.es ul {
+  margin-top: 10px;
+}
+
+.es .text {
+  font-weight: bold;
+  color: #FFC222;
+}
+
 .es .estimeline {
   width: 80%;
   display: block;
-  margin-left: 15%;
+  margin-left: 11%;
 }
 
 .es .btn-wrap {
