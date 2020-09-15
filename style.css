@@ -662,6 +662,10 @@ p {
   display: inline;
 }
 
+.joinus p a {
+  color: #FFC222;
+}
+
 @media screen and (max-width: 601px) {
   .joinus .info {
     padding-top: 50px;
