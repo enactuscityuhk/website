@@ -249,7 +249,7 @@ p {
   color: white;
 }
 
-.ourteam {
+.ourteam, .gallery-home {
   margin: 70px auto;
   color: #FFC222;
   font-size: 2.5rem;
@@ -257,27 +257,27 @@ p {
   position: relative;
 }
 
-.ourteam img {
+.ourteam .prof img, .gallery-home .prof img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
   transition: transform .2s;
 }
 
-.ourteam img:hover {
+.ourteam .prof img:hover, .gallery-home .prof img:hover {
   transform: scale(1.1);
 }
 
-.ourteam h3 {
+.ourteam h3, .gallery-home h3 {
   font-weight: bold;
   padding-top: 10px;
 }
 
-.ourteam h5 {
+.ourteam h5, .gallery-home h5 {
   color: #515356;
 }
 
-.ourteam p {
+.ourteam p, .gallery-home p {
   font-size: 1rem;
   font-weight: 300;
   color: #515356;
@@ -312,6 +312,46 @@ p {
 .members .prof p {
   padding-top: 30px;
   font-size: 1.05rem;
+}
+
+.slider-frame {
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+  margin: auto auto 100px;
+}
+
+@-webkit-keyframes slide_animation {
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:800px;}
+  30% {left:800px;}
+  40% {left:1600px;}
+  50% {left:1600px;}
+  60% {left:800px;}
+  70% {left:800px;}
+  80% {left:0px;}
+  90% {left:0px;}
+  100% {left:0px;}
+}
+
+.slide-images {
+  width: 2400px;
+  height: 800px;
+  margin: 0 0 0 -1600px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 33s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.img-container {
+  height: 800px;
+  width: 800px;
+  position: relative;
+  float: left;
 }
 
 .event {
@@ -729,6 +769,131 @@ p {
 
 .contact i:hover {
   transform: scale(1.2);
+}
+
+.gallery {
+  margin: 70px auto;
+  color: #FFC222;
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: relative;
+}
+
+.gallery .prof {
+  width: 80%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.gallery .col-lg-4 {
+  padding-bottom: 50px;
+}
+
+/* .gallery img {
+  transition: transform .2s;
+} */
+
+/* .gallery img:hover {
+  transform: scale(1.1);
+} */
+
+#myImg {
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px){
+  #myImg {
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+  }
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
 }
 
 footer {
