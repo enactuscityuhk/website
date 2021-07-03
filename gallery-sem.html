@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Enactus CityU - Impact Starts From Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="home/mark.png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/474d3a4f80.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176979952-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-176979952-1');
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark my-nav">
+    <a class="logo" href="index.html"><img src="general/logo.png" alt=""><a />
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="my-nav-item nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="my-nav-item nav-item active">
+            <a class="nav-link" href="gallery-home.html">Gallery</a>
+          </li>
+          <li class="my-nav-item nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropteam" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Our Team</a>
+            <div class="dropdown-menu dropteam-content" aria-labelledby="dropteam">
+              <a href="team.html">Executive Team</a>
+              <a href="members.html">Active Members</a>
+            </div>
+          </li>
+          <li class="my-nav-item nav-item active">
+            <a class="nav-link" href="event.html">Events</a>
+          </li>
+          <li class="my-nav-item nav-item active btn">
+            <a class="nav-link" href="apply.html">Join Us</a>
+          </li>
+      </div>
+  </nav>
+  <div id="effect" class="container-fluid banner">
+    <div class="home-banner">
+      <img class="banner-img" src="exe/banner.jpg" alt="">
+      <div class="banner-box">
+        <div class="banner-text">
+          <div class="row justify-content-center">
+            <h2>meet our team</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="container" style="margin-bottom: 2%; justify-content: center;">
+      MENTORSHIP SCHEME
+    </div>
+    <div class="row prof">
+      <div class="col col-lg-4 col-sm-12">
+        <img id="myImg" onclick="onClick(this)" src="gallery/mentor/1.jpeg" alt="">
+      </div>
+      <div class="col col-lg-4 col-sm-12">
+        <img id="myImg" onclick="onClick(this)" src="gallery/mentor/2.jpeg" alt="">
+      </div>
+      <div class="col col-lg-4 col-sm-12">
+        <img id="myImg" onclick="onClick(this)" src="gallery/mentor/3.jpeg" alt="NAINWAL">
+      </div>
+    </div>
+    <div class="row prof">
+      <div class="col col-lg-4 col-sm-12">
+        <img id="myImg" onclick="onClick(this)" src="gallery/mentor/4.jpeg" alt="PANT">
+      </div>
+      <div class="col col-lg-4 col-sm-12">
+        <img id="myImg" onclick="onClick(this)" src="gallery/mentor/5.jpeg" alt="HALDIYA">
+      </div>
+      <div class="col col-lg-4 col-sm-12">
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01">
+      <div id="caption"></div>
+    </div>
+  </div>
+  <div class="container-fluid contact">
+    <a href="https://www.instagram.com/enactus.cityu/?hl=zh-hk" target="_blank"><i class="fab fa-instagram-square"></i></a>
+    <a href="https://www.linkedin.com/company/enactus-cityu" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.facebook.com/enactus.cityuofhk" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a href="mailto:cityu@enactus.hk"><i class="fas fa-envelope-square"></i></a>
+  </div>
+  <footer>
+    All rights reserved © 2021 Enactus Hong Kong CityU Chapter
+  </footer>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".modal-content"), {
+      max: 15,
+      speed: 400
+    });
+    </script>
+</body>
+<script>
+  var modal = document.getElementById("myModal");
+
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("myModal").style.display = "block";
+  }
+
+  var span = document.getElementsByClassName("close")[0];
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function() {
+    modal.style.display = "none";
+  }
+</script>
+
+</html>
