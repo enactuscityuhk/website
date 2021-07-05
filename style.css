@@ -751,6 +751,17 @@ p {
   margin-right: auto;
 }
 
+.joinus p {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.joinus .info {
+  padding-top: 30px;
+}
+
 .joinus p img {
   width: 20px;
   display: inline;
@@ -758,12 +769,6 @@ p {
 
 .joinus p a {
   color: #FFC222;
-}
-
-@media screen and (max-width: 601px) {
-  .joinus .info {
-    padding-top: 50px;
-  }
 }
 
 .joinus .qr {
