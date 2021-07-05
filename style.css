@@ -749,20 +749,32 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  vertical-align: top;
+  margin-right: 5px;
 }
 
 .joinus p {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
+  text-align: left;
+  display: inline-block;
 }
 
 .joinus .info {
   padding-top: 30px;
 }
 
-.joinus p img {
+@media only screen and (max-width: 700px){
+  .joinus p {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+}
+
+.joinus .info img {
   width: 20px;
   display: inline;
 }
